@@ -1,0 +1,28 @@
+.container {
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+    margin: auto;
+    padding-top: 5%;
+   
+}
+
+.game-room {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px silver;
+    height: fit-content;
+
+}
+
+table, td {
+    border: 2px double;
+    padding: 40px;
+    
+}
+
+.js-field {
+    width: 200px;
+    height: 200px;
+}

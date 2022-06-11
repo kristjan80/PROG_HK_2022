@@ -1,0 +1,57 @@
+.main {
+    vertical-align: middle;
+    display: table;
+    text-align: center;
+    background-image: url("background.jpg");
+    background-repeat:no-repeat;
+    position: relative;
+    margin: auto;
+    padding-top: 5%;
+   
+}
+
+h1 {
+    color: rgb(176, 121, 228);
+}
+
+h2 {
+    color: aliceblue;
+}
+
+fieldset {
+    max-width: 50%;
+    min-width: 10%;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 2px dashed whitesmoke;
+    margin: 0 auto 14px auto;
+    padding: 10px 10px;
+    display: block;
+    min-inline-size: min-content;
+}
+
+legend {
+    margin: 0px auto;
+    color: whitesmoke;
+    display: block;
+}
+
+p {
+    color: whitesmoke;
+    font-size: 16px;
+}
+
+input {
+    margin: 8px 8px;
+}
+
+
+.rollTotal {
+    color: whitesmoke;
+    font-size: 16px;
+}
+
+.diceAnimation {
+    width: 500px;
+    height: 150px;
+}
+

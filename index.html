@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="et">
+
+<head>
+    <meta charset="UTF-8">
+    <title> D&D </title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <script src="dd.js"></script>
+</head>
+
+<body class="main">
+    <header>
+
+    </header>
+
+
+    <section class="display: table-cell; vertical-align:middle;">
+        <fieldset>
+            <h1>D&D Dice Rolling</h1>
+        </fieldset>
+
+        <fieldset>
+            <h2>Created by: Kristjan Leototos</h2>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Veereta täringuid</legend>
+            <form class="form-group" id="formdd" name="formdd">
+                <input type="text" id="dices" name="dices" placeholder="Sisesta täringud..." size="50">
+                <input class="btn btn-light" type="button" id="veereta" name="veereta" value="VEERETA🎲"
+                    onclick="rollDicesAnimation()">
+                <input class="btn btn-light" type="button" id="puhasta" name="puhasta" value="PUHASTA🧹"
+                    onclick="clearRolls()">
+
+            </form>
+        </fieldset>
+
+        <fieldset>
+            <div id="rollResults">
+
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <div id="rollTotal" class="rollTotal">
+
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>TÄRINGUD</legend>
+            <div class="diceAnimation" id="diceAnimation">
+
+            </div>
+        </fieldset>
+
+
+        <script src="roll-a-die.js"></script>
+        <script>
+            function animCallback() {
+                rollDices();
+            }
+            function rollDicesAnimation() {
+
+                const element = document.getElementById('diceAnimation');
+                const numberOfDice = +"5";
+                const options = {
+                    element, // element to display the animated dice in.
+                    numberOfDice, // number of dice to use 
+                    callback: animCallback
+                }
+                rollADie(options);
+
+            }
+        </script>
+
+    </section>
+
+    <footer>
+
+
+    </footer>
+
+</body>
+
+</html>

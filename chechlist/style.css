@@ -1,0 +1,27 @@
+label {
+    font-size: 20px;
+}
+/*
+    https://stackoverflow.com/questions/25549661/check-box-size-change-with-css
+*/
+input[type=checkbox] {
+
+    -ms-transform: scale(1.5); /* IE */
+    -moz-transform: scale(1.5); /* FF */
+    -webkit-transform: scale(1.5); /* Safari and Chrome */
+    -o-transform: scale(1.5); /* Opera */
+     padding: 20px;
+     margin: 10px;
+}
+
+.main {
+
+    position: relative;
+    margin: auto;
+    padding: 2% 5%;
+   
+
+    
+}
+
+p { display: inline }
